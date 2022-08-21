@@ -1,6 +1,7 @@
 import CurrencyRouletteGame
 import GuessGame
 import MemoryGame
+from Scores import add_score
 
 
 def welcome(name):
@@ -39,5 +40,6 @@ def load_game():
         game_status = CurrencyRouletteGame.play(difficulty_level)
     if game_status:
         print('Well done! you WIN')
+        add_score(difficulty_level)
     else:
         print('Sorry, You LOST!')
