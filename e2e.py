@@ -18,3 +18,7 @@ def main_function():
         return sys.exit(0)
     else:
         return sys.exit(1)
+
+
+if __name__ == "__main__":
+    main_function()
